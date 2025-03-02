@@ -1,0 +1,5 @@
+ultralytics
+Flask
+transformers
+opencv-python
+torchvision
