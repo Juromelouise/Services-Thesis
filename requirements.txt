@@ -3,3 +3,5 @@ Flask
 transformers
 opencv-python
 torchvision
+fastapi
+uvicorn

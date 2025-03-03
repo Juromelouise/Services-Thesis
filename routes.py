@@ -19,6 +19,6 @@ async def detect_plate(file: UploadFile = File(...)):
         _, buffer = cv2.imencode('.jpg', processed_image)
         image_base64 = base64.b64encode(buffer).decode("utf-8")
         
-        return JSONResponse(content={"license_plate": plate_texts, "image": image_base64})
+        return JSONResponse(content={"license_plate": plate_texts})
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
